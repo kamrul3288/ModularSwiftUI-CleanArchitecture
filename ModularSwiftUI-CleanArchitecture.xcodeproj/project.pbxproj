@@ -14,6 +14,7 @@
 		0264CEE92A7283F70069A7DD /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEE82A7283F70069A7DD /* Model */; };
 		0264CEEC2A7284520069A7DD /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEEB2A7284520069A7DD /* Data */; };
 		0264CEEF2A7284980069A7DD /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEEE2A7284980069A7DD /* Domain */; };
+		02F9860F2A72CC9200BCC5DF /* Di in Frameworks */ = {isa = PBXBuildFile; productRef = 02F9860E2A72CC9200BCC5DF /* Di */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0264CEE62A7283360069A7DD /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Model; sourceTree = "<group>"; };
 		0264CEEA2A7284310069A7DD /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		0264CEED2A7284810069A7DD /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		02F9860D2A72CC6100BCC5DF /* Di */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Di; path = "ModularSwiftUI-CleanArchitecture/Di"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 				0264CEEF2A7284980069A7DD /* Domain in Frameworks */,
 				0264CEEC2A7284520069A7DD /* Data in Frameworks */,
 				0264CEE92A7283F70069A7DD /* Model in Frameworks */,
+				02F9860F2A72CC9200BCC5DF /* Di in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 		0264CEC82A7282430069A7DD = {
 			isa = PBXGroup;
 			children = (
+				02F9860C2A72CC4400BCC5DF /* Di */,
 				0264CEE42A7282CA0069A7DD /* Model */,
 				0264CEE32A7282B70069A7DD /* Data */,
 				0264CEE52A7282D40069A7DD /* Domain */,
@@ -111,6 +115,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		02F9860C2A72CC4400BCC5DF /* Di */ = {
+			isa = PBXGroup;
+			children = (
+				02F9860D2A72CC6100BCC5DF /* Di */,
+			);
+			name = Di;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +143,7 @@
 				0264CEE82A7283F70069A7DD /* Model */,
 				0264CEEB2A7284520069A7DD /* Data */,
 				0264CEEE2A7284980069A7DD /* Domain */,
+				02F9860E2A72CC9200BCC5DF /* Di */,
 			);
 			productName = "ModularSwiftUI-CleanArchitecture";
 			productReference = 0264CED12A7282430069A7DD /* ModularSwiftUI-CleanArchitecture.app */;
@@ -399,6 +412,10 @@
 		0264CEEE2A7284980069A7DD /* Domain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Domain;
+		};
+		02F9860E2A72CC9200BCC5DF /* Di */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Di;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
