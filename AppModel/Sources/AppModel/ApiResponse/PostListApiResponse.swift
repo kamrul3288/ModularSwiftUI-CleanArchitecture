@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct PostListApiRespose : Codable, Identifiable{
+public struct PostListApiResponse : Codable, Identifiable{
     let userID:Int
-    let id: Int
+    public let id: Int
     let title:String
     let body: String
     

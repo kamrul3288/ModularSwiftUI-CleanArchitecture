@@ -8,9 +8,9 @@
 import Foundation
 
 @propertyWrapper
-struct Inject<T>{
-    var wrappedValue:T
-    init(_ injectType:DiInjectType = .runtime){
+public struct Inject<T>{
+    public var wrappedValue:T
+    public init(_ injectType:DiInjectType = .runtime){
         self.wrappedValue = DependencyInjector.resolve(injectType: injectType)
     }
 }
