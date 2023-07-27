@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct ServerResponse: Decodable{
+struct ServerErrorResponse: Decodable{
     let message: String?
 }
 
