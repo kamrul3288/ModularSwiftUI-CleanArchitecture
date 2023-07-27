@@ -1,3 +1,3 @@
 # Di
 
-A description of this package.
+an opinionated dependency injection library  of this package.
