@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import AppModel
+
 protocol ApiUseCaseNonParams{
     associatedtype T
-    //func execute()async -> Result<T,ApiClientError>
+    func execute()async -> Result<T,NetworkErrorInterceptor>
 }

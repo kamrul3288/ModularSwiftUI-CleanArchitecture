@@ -11,10 +11,10 @@
 		0264CED72A7282430069A7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED62A7282430069A7DD /* ContentView.swift */; };
 		0264CED92A7282440069A7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CED82A7282440069A7DD /* Assets.xcassets */; };
 		0264CEDC2A7282440069A7DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */; };
-		0264CEE92A7283F70069A7DD /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEE82A7283F70069A7DD /* Model */; };
 		0264CEEC2A7284520069A7DD /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEEB2A7284520069A7DD /* Data */; };
 		0264CEEF2A7284980069A7DD /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEEE2A7284980069A7DD /* Domain */; };
 		02F986132A72CDFF00BCC5DF /* Di in Frameworks */ = {isa = PBXBuildFile; productRef = 02F986122A72CDFF00BCC5DF /* Di */; };
+		02F986182A72D97F00BCC5DF /* AppModel in Frameworks */ = {isa = PBXBuildFile; productRef = 02F986172A72D97F00BCC5DF /* AppModel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +23,10 @@
 		0264CED62A7282430069A7DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0264CED82A7282440069A7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0264CEE62A7283360069A7DD /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Model; sourceTree = "<group>"; };
 		0264CEEA2A7284310069A7DD /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 		0264CEED2A7284810069A7DD /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		02F986112A72CDD700BCC5DF /* Di */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Di; sourceTree = "<group>"; };
+		02F986162A72D92E00BCC5DF /* AppModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppModel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			files = (
 				0264CEEF2A7284980069A7DD /* Domain in Frameworks */,
 				0264CEEC2A7284520069A7DD /* Data in Frameworks */,
-				0264CEE92A7283F70069A7DD /* Model in Frameworks */,
+				02F986182A72D97F00BCC5DF /* AppModel in Frameworks */,
 				02F986132A72CDFF00BCC5DF /* Di in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				02F986102A72CD9700BCC5DF /* Di */,
-				0264CEE42A7282CA0069A7DD /* Model */,
+				0264CEE42A7282CA0069A7DD /* AppModel */,
 				0264CEE32A7282B70069A7DD /* Data */,
 				0264CEE52A7282D40069A7DD /* Domain */,
 				0264CED32A7282430069A7DD /* ModularSwiftUI-CleanArchitecture */,
@@ -92,12 +92,12 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
-		0264CEE42A7282CA0069A7DD /* Model */ = {
+		0264CEE42A7282CA0069A7DD /* AppModel */ = {
 			isa = PBXGroup;
 			children = (
-				0264CEE62A7283360069A7DD /* Model */,
+				02F986162A72D92E00BCC5DF /* AppModel */,
 			);
-			name = Model;
+			name = AppModel;
 			sourceTree = "<group>";
 		};
 		0264CEE52A7282D40069A7DD /* Domain */ = {
@@ -140,10 +140,10 @@
 			);
 			name = "ModularSwiftUI-CleanArchitecture";
 			packageProductDependencies = (
-				0264CEE82A7283F70069A7DD /* Model */,
 				0264CEEB2A7284520069A7DD /* Data */,
 				0264CEEE2A7284980069A7DD /* Domain */,
 				02F986122A72CDFF00BCC5DF /* Di */,
+				02F986172A72D97F00BCC5DF /* AppModel */,
 			);
 			productName = "ModularSwiftUI-CleanArchitecture";
 			productReference = 0264CED12A7282430069A7DD /* ModularSwiftUI-CleanArchitecture.app */;
@@ -401,10 +401,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0264CEE82A7283F70069A7DD /* Model */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Model;
-		};
 		0264CEEB2A7284520069A7DD /* Data */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Data;
@@ -416,6 +412,10 @@
 		02F986122A72CDFF00BCC5DF /* Di */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Di;
+		};
+		02F986172A72D97F00BCC5DF /* AppModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppModel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

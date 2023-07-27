@@ -7,7 +7,7 @@
 
 import Foundation
 
-final enum DiInjectType{
+public enum DiInjectType{
     case singleton
     case runtime
 }

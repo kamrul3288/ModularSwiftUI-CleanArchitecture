@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum NetworkErrorInterceptor : Error{
+public enum NetworkErrorInterceptor : Error{
     case badUrl(String?)
     case decodingError
     case invalidServerResponse(Int,String?)
