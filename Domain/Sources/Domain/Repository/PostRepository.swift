@@ -8,6 +8,6 @@
 import Foundation
 import AppModel
 
-protocol PostRepository{
+public protocol PostRepository{
     func fetchPostList()async -> Result<[PostListApiResponse],NetworkErrorInterceptor>
 }

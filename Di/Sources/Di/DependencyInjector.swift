@@ -6,7 +6,7 @@
 //
 
 import Foundation
-final class DependencyInjector{
+public final class DependencyInjector{
     
     private  var cache: [String: Any] = [:]
     private  var generators: [String: ()->Any] = [:]
