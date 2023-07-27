@@ -12,6 +12,7 @@
 		0264CED92A7282440069A7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CED82A7282440069A7DD /* Assets.xcassets */; };
 		0264CEDC2A7282440069A7DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */; };
 		0264CEE92A7283F70069A7DD /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEE82A7283F70069A7DD /* Model */; };
+		0264CEEC2A7284520069A7DD /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEEB2A7284520069A7DD /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0264CED82A7282440069A7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0264CEE62A7283360069A7DD /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Model; sourceTree = "<group>"; };
+		0264CEEA2A7284310069A7DD /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0264CEEC2A7284520069A7DD /* Data in Frameworks */,
 				0264CEE92A7283F70069A7DD /* Model in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +80,7 @@
 		0264CEE32A7282B70069A7DD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0264CEEA2A7284310069A7DD /* Data */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -121,6 +125,7 @@
 			name = "ModularSwiftUI-CleanArchitecture";
 			packageProductDependencies = (
 				0264CEE82A7283F70069A7DD /* Model */,
+				0264CEEB2A7284520069A7DD /* Data */,
 			);
 			productName = "ModularSwiftUI-CleanArchitecture";
 			productReference = 0264CED12A7282430069A7DD /* ModularSwiftUI-CleanArchitecture.app */;
@@ -381,6 +386,10 @@
 		0264CEE82A7283F70069A7DD /* Model */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Model;
+		};
+		0264CEEB2A7284520069A7DD /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
