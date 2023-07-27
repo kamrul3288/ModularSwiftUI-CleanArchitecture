@@ -1,3 +1,3 @@
 # Model
 
-A description of this package.
+Business Objects that encapsulate data and behavior of application domain, Simply hold the data. 
