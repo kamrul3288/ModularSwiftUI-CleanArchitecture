@@ -9,10 +9,12 @@ import Foundation
 import AppModel
 import Di
 
-class PostListApiUseCase : ApiUseCaseNonParams{
+public class PostListApiUseCase{
+    public init(){}
+
     typealias T = [PostListApiResponse]
     @Inject var repository:PostRepository
-    
+
     func execute() async -> Result<[PostListApiResponse], NetworkErrorInterceptor> {
         return await repository.fetchPostList()
     }

@@ -13,14 +13,14 @@ public final class DependencyInjector{
     private static let shared = DependencyInjector.init()
     
     
-    static func provide<T>(injectType:DiInjectType, factory: @autoclosure @escaping ()->T){
-        shared.generators[String(describing: T.self)] = factory
+    public static func provide<T>(type: T.Type, injectType:DiInjectType, factory: @autoclosure @escaping ()->T){
+        shared.generators[String(describing: type.self)] = factory
         if( injectType == .singleton){
-            shared.cache[String(describing: T.self)] = factory()
+            shared.cache[String(describing: type.self)] = factory()
         }
     }
     
-    static func resolve<T>(injectType:DiInjectType = .runtime)->T{
+    public static func resolve<T>(injectType:DiInjectType = .runtime)->T{
         let key = String(describing: T.self)
         switch injectType{
             case .singleton:

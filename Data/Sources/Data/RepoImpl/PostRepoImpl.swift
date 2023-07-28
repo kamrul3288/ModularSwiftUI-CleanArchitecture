@@ -11,7 +11,9 @@ import Di
 import AppModel
 
 public class PostRepoImpl : PostRepository{
-    @Inject var resources:NetworkBoundResources
+    public init(){}
+    
+    @Inject(.singleton) var resources:NetworkBoundResources
     
     public func fetchPostList() async -> Result<[PostListApiResponse], NetworkErrorInterceptor> {
         do{

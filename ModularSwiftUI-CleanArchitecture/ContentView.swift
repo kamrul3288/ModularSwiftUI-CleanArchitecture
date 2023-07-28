@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
+import Domain
+import Di
+import Data
 
 struct ContentView: View {
+    @Inject var reposiory:PostListApiUseCase
     var body: some View {
+        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            
         }
         .padding()
     }

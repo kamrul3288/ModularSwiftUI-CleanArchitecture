@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0264CED52A7282430069A7DD /* ModularSwiftUI_CleanArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED42A7282430069A7DD /* ModularSwiftUI_CleanArchitectureApp.swift */; };
+		0264CED52A7282430069A7DD /* MainApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED42A7282430069A7DD /* MainApplication.swift */; };
 		0264CED72A7282430069A7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED62A7282430069A7DD /* ContentView.swift */; };
 		0264CED92A7282440069A7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CED82A7282440069A7DD /* Assets.xcassets */; };
 		0264CEDC2A7282440069A7DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0264CED12A7282430069A7DD /* ModularSwiftUI-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ModularSwiftUI-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0264CED42A7282430069A7DD /* ModularSwiftUI_CleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularSwiftUI_CleanArchitectureApp.swift; sourceTree = "<group>"; };
+		0264CED42A7282430069A7DD /* MainApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplication.swift; sourceTree = "<group>"; };
 		0264CED62A7282430069A7DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0264CED82A7282440069A7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		0264CED32A7282430069A7DD /* ModularSwiftUI-CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				0264CED42A7282430069A7DD /* ModularSwiftUI_CleanArchitectureApp.swift */,
+				0264CED42A7282430069A7DD /* MainApplication.swift */,
 				0264CED62A7282430069A7DD /* ContentView.swift */,
 				0264CED82A7282440069A7DD /* Assets.xcassets */,
 				0264CEDA2A7282440069A7DD /* Preview Content */,
@@ -200,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0264CED72A7282430069A7DD /* ContentView.swift in Sources */,
-				0264CED52A7282430069A7DD /* ModularSwiftUI_CleanArchitectureApp.swift in Sources */,
+				0264CED52A7282430069A7DD /* MainApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

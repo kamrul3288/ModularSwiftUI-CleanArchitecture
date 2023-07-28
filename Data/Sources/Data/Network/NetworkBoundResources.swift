@@ -8,7 +8,8 @@
 import Foundation
 import AppModel
 
-class NetworkBoundResources{
+public class NetworkBoundResources{
+    public init(){}
     
     func downloadApiData<T:Codable>(_ resource:Resources<T>) async throws -> T{
         do{
