@@ -16,7 +16,7 @@ public enum NetworkErrorInterceptor : Error{
     case unknownError
     case noData
 
-    var message: String{
+    public var message: String{
         switch self{
         case .badUrl(let url): return "Invalid URL: \(String(describing: url))"
             case .decodingError:  return "Data missmatch. Please try again!"
@@ -29,7 +29,7 @@ public enum NetworkErrorInterceptor : Error{
         }
     }
         
-    var code: Int{
+    public var code: Int{
         switch self{
             case .badUrl(_): return 0
             case .decodingError:  return 0

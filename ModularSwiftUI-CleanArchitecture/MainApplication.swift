@@ -19,7 +19,9 @@ struct MainApplication: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                PostListView()
+            }
         }
     }
     

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0211D3D32A737CA0009CBAFD /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211D3D22A737CA0009CBAFD /* PostListViewModel.swift */; };
+		0211D3D62A7387D7009CBAFD /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211D3D52A7387D7009CBAFD /* AppExtension.swift */; };
 		0264CED52A7282430069A7DD /* MainApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED42A7282430069A7DD /* MainApplication.swift */; };
-		0264CED72A7282430069A7DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED62A7282430069A7DD /* ContentView.swift */; };
+		0264CED72A7282430069A7DD /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0264CED62A7282430069A7DD /* PostListView.swift */; };
 		0264CED92A7282440069A7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CED82A7282440069A7DD /* Assets.xcassets */; };
 		0264CEDC2A7282440069A7DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */; };
 		0264CEEC2A7284520069A7DD /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 0264CEEB2A7284520069A7DD /* Data */; };
@@ -18,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0211D3D22A737CA0009CBAFD /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		0211D3D52A7387D7009CBAFD /* AppExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
 		0264CED12A7282430069A7DD /* ModularSwiftUI-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ModularSwiftUI-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0264CED42A7282430069A7DD /* MainApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplication.swift; sourceTree = "<group>"; };
-		0264CED62A7282430069A7DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0264CED62A7282430069A7DD /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		0264CED82A7282440069A7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0264CEDB2A7282440069A7DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0264CEEA2A7284310069A7DD /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
@@ -44,6 +48,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0211D3D12A737C78009CBAFD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0264CED62A7282430069A7DD /* PostListView.swift */,
+				0211D3D22A737CA0009CBAFD /* PostListViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0211D3D42A7387B1009CBAFD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0211D3D52A7387D7009CBAFD /* AppExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0264CEC82A7282430069A7DD = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				0264CED42A7282430069A7DD /* MainApplication.swift */,
-				0264CED62A7282430069A7DD /* ContentView.swift */,
+				0211D3D42A7387B1009CBAFD /* Extension */,
+				0211D3D12A737C78009CBAFD /* Presentation */,
 				0264CED82A7282440069A7DD /* Assets.xcassets */,
 				0264CEDA2A7282440069A7DD /* Preview Content */,
 			);
@@ -199,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0264CED72A7282430069A7DD /* ContentView.swift in Sources */,
+				0264CED72A7282430069A7DD /* PostListView.swift in Sources */,
 				0264CED52A7282430069A7DD /* MainApplication.swift in Sources */,
+				0211D3D32A737CA0009CBAFD /* PostListViewModel.swift in Sources */,
+				0211D3D62A7387D7009CBAFD /* AppExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

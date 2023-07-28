@@ -8,10 +8,10 @@
 import Foundation
 
 public struct PostListApiResponse : Codable, Identifiable{
-    let userID:Int
+    public let userID:Int
     public let id: Int
-    let title:String
-    let body: String
+    public let title:String
+    public let body: String
     
     enum CodingKeys: String, CodingKey {
         case userID = "userId"
